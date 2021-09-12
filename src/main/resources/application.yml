@@ -1,0 +1,17 @@
+server:
+  # 服务端口配置
+  port: 8888
+spring:
+  # 数据源配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+
+mybatis:
+  # 实体类别名映射包路径
+  type-aliases-package: com.example.dao.entity
+  configuration:
+    # 开启驼峰命名
+    map-underscore-to-camel-case: true
